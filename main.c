@@ -11,28 +11,38 @@
 
 int main()
 {
-    double lbm1, lbm2;
-    double weight1, weight2;
-    double bodyfat1, bodyfat2;
-
-    double tt6;
-    double Rate_weightloss;
-    int numberofweeks;
+    double weight1;
+    double weight2;
+    double bodyfat1;
+    double bodyfat2;
 
     printf("Enter your current weight in pounds.\n");
     scanf("%f", &weight1);
     printf("Enter your current %bodyfat.\n");
-    scanf("%d", &bodyfat1);
+    scanf("%f", &bodyfat1);
 
-    lbm1 = weight1 * (1-(bodyfat1/100));
+    printf("Current weight in pounds: %f\n", weight1);
+    printf("Current bodyfat%: %f\n", bodyfat1);
 
-    printf("Lean Body Mass before weight change: %f\n", lbm1);
-    lbm2 = lbm1 * (97/100);
-    printf("\nLean Body Mass after weight change: %f\n", lbm2);
+    double lbm1;
+    lbm1 = (weight1 * (1-(bodyfat1/100)));
 
-    weight2 = lbm2 / (1-bodyfat2/100);
+    printf("Lean Body Mass before weight change: %f", lbm1);
 
-    tt6 = weight1 - weight2 / Rate_weightloss/numberofweeks;
+
+
+   //double lbm2;
+   // lbm2 = lbm1 * (97/100);
+    //printf("\nLean Body Mass after weight change: %f\n", lbm2);
+
+    //weight2 = lbm2 / (1-bodyfat2/100);
+
+    // double tt6;
+   // double Rate_weightloss;
+   // int numberofweeks;
+
+
+    //tt6 = weight1 - weight2 / Rate_weightloss/numberofweeks;
 
 
     /*
@@ -46,5 +56,5 @@ int main()
     tt6 = weight1 - weight2 / rate_of_weight_loss per week
 
     */
-    return 0;
+   // return 0;
 }
