@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1532810555 source:c:\users\afnan\desktop\c_programs\fit_calculator\main.c
+	<stdio.h>
+	<stdlib.h>
+
