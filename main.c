@@ -1,5 +1,5 @@
 /*  Written by: Afnan Sultan
-    Date Last Modified: 7/27/18
+    Date Last Modified: 7/28/18
 
     This program is a fitness calculator
     This program allows the user to enter their current weight
@@ -11,23 +11,23 @@
 
 int main()
 {
-    double weight1;
-    double weight2;
-    double bodyfat1;
-    double bodyfat2;
+    int weight1;
+    int weight2;
+    float bodyfat1;
+    int bodyfat2;
 
-    printf("Enter your current weight in pounds.\n");
-    scanf("%f", &weight1);
-    printf("Enter your current %bodyfat.\n");
+    printf("Enter your current weight in pounds.");
+    scanf("%d", &weight1);
+    printf("\nEnter your current %bodyfat.\n");
     scanf("%f", &bodyfat1);
 
-    printf("Current weight in pounds: %f\n", weight1);
-    printf("Current bodyfat%: %f\n", bodyfat1);
+    printf("\nCurrent weight in pounds: %d", weight1);
+    printf("\nCurrent bodyfat%%: %d", bodyfat1);
 
-    double lbm1;
+    float lbm1;
     lbm1 = (weight1 * (1-(bodyfat1/100)));
 
-    printf("Lean Body Mass before weight change: %f", lbm1);
+    printf("\nLean Body Mass before weight change: %f", lbm1);
 
 
 
